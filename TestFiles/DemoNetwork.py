@@ -69,7 +69,7 @@ class FileClassifier(object):
         data_as_string = np.array(input_as_string, 'c').view(np.uint8)
         padding = self.hyperparams["x_len"] - len(data_as_string)
         data_as_string = np.lib.pad(data_as_string, (0, padding), 'constant', constant_values=(0, 0))
-        data_as_string = data_as_string.astype(float)
+        data_as_string = data_as_string.astype(float) * 0.001
 
         return data_as_string
 
