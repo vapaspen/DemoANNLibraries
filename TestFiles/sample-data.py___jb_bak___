@@ -1,0 +1,30 @@
+__author__ = 'vapaspen'
+__name__ = 'sample-data'
+
+'''
+the_data ={
+    "context": [
+        "string",
+        "string"
+    ],
+    "analysis": [
+        "string",
+        "string"
+    ]
+}"
+'''
+
+Train_Data = {
+    '1':{
+        "context": [
+
+        ],
+        "analysis": []
+    }
+}
+
+Test_Data = [
+
+
+]
+
