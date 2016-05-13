@@ -9,6 +9,8 @@ class ANN_Layer(object):
     """
 
     def __init__(self, X_count, H_count, is_recurrent=True, MU=0.01, learning_rate=0.01):
+        rng = np.random.RandomState(1234)
+
         self.Layer = {}
 
         self.Layer["X_count"] = X_count
@@ -31,12 +33,26 @@ class ANN_Layer(object):
         self.Layer["nodes"]["bias_delta"] = np.zeros_like(self.Layer["nodes"]["bias"])
         self.Layer["nodes"]["bias_delta_last"] = np.zeros_like(self.Layer["nodes"]["bias"])
 
-        self.Layer["nodes"]["input_weights"] = np.random.random((self.Layer["X_count"], self.Layer["H_count"]))*0.01
+        self.Layer["nodes"]["input_weights"] = np.asarray(
+                rng.uniform(
+                    low=-np.sqrt(6. / (self.Layer["X_count"] + self.Layer["H_count"])),
+                    high=np.sqrt(6. / (self.Layer["X_count"] + self.Layer["H_count"])),
+                    size=(self.Layer["X_count"], self.Layer["H_count"])
+                ),
+                dtype=float
+        )
         self.Layer["nodes"]["input_weights_delta"] = np.zeros_like(self.Layer["nodes"]["input_weights"])
         self.Layer["nodes"]["input_weights_delta_last"] = np.zeros_like(self.Layer["nodes"]["input_weights"])
 
         if self.Layer["is_recurrent"]:
-            self.Layer["nodes"]["hidden_weights"] = np.random.random((self.Layer["H_count"], self.Layer["H_count"]))*0.01
+            self.Layer["nodes"]["hidden_weights"] = np.asarray(
+                rng.uniform(
+                    low=-np.sqrt(6. / (self.Layer["H_count"] + self.Layer["H_count"])),
+                    high=np.sqrt(6. / (self.Layer["H_count"] + self.Layer["H_count"])),
+                    size=(self.Layer["H_count"], self.Layer["H_count"])
+                ),
+                dtype=float
+        )
             self.Layer["nodes"]["hidden_weights_delta"] = np.zeros_like(self.Layer["nodes"]["hidden_weights"])
             self.Layer["nodes"]["hidden_weights_delta_last"] = np.zeros_like(self.Layer["nodes"]["hidden_weights"])
 
@@ -128,6 +144,7 @@ class ANN_Layer(object):
                                           [self.Layer["nodes"]["bias_delta"], self.Layer["nodes"]["input_weights_delta"], self.Layer["nodes"]["hidden_weights_delta"]],
                                            [self.Layer["nodes"]["bias_delta_last"], self.Layer["nodes"]["input_weights_delta_last"], self.Layer["nodes"]["hidden_weights_delta_last"]]):
                 np.clip(delta_param, -10, 10, out=delta_param)
+                param -= (self.Layer["learning_rate"] * delta_param) + (delta_last * self.Layer["MU"])
 
         else:
             for param, delta_param, delta_last in zip([self.Layer["nodes"]["bias"], self.Layer["nodes"]["input_weights"]],

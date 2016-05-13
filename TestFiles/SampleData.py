@@ -19,7 +19,7 @@ the_data ={
 '''
 
 Train_Data = {
-    '0':{
+    '0': {
         "context": [
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed",
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-CSharp-firstpass.dll",
@@ -50,7 +50,104 @@ Train_Data = {
             [1.0, 0.0],
         ]
     },
-    '1':{
+    '1': {
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-CSharp-firstpass.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-CSharp.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-UnityScript-firstpass.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-UnityScript.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Boo.Lang.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\DynamicText.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Mono.Posix.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Mono.Security.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\mscorlib.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Configuration.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Core.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Security.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Xml.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Xml.Linq.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.Analytics.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.Networking.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.UI.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityScript.Lang.dll",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.xml",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\game.ico"
+        ],
+        "train": [
+            [1.0, 0.0],
+            [0.0, 1.0],
+        ]
+    },
+    '2': {
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-CSharp-firstpass.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-CSharp.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-UnityScript-firstpass.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-UnityScript.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Boo.Lang.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\DynamicText.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Mono.Posix.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Mono.Security.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\mscorlib.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Configuration.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Core.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Security.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Xml.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Xml.Linq.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.Analytics.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.Networking.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.UI.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityScript.Lang.dll",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\SaveData.dat"
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\LevelData"
+        ],
+        "train": [
+            [0.0, 1.0],
+            [0.0, 1.0],
+        ]
+    },
+    '3': {
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-CSharp-firstpass.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-CSharp.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-UnityScript-firstpass.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Assembly-UnityScript.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Boo.Lang.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\DynamicText.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Mono.Posix.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\Mono.Security.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\mscorlib.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Configuration.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Core.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Security.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Xml.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\System.Xml.Linq.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.Analytics.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.Networking.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityEngine.UI.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\UnityScript.Lang.dll",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Besiege\\Besiege_Data\\Managed\\config.bat"
+        ],
+        "train": [
+            [0.0, 1.0],
+        ]
+    },
+    '4':{
         "context": [
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32",
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\ApexFrameworkSHIPPING_x86.dll",
@@ -68,7 +165,45 @@ Train_Data = {
             [1.0, 0.0],
         ]
     },
-    '2':{
+    '5':{
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\ApexFrameworkSHIPPING_x86.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\APEX_ClothingSHIPPING_x86.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\binkw32.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\BioShockInfinite.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\nvtt.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\PhysX3_x86.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\steam_api.dll",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\Benchmark.bat",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\game.icon",
+        ],
+        "train": [
+            [1.0, 0.0],
+            [0.0, 1.0],
+        ]
+    },
+    '6':{
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\ApexFrameworkSHIPPING_x86.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\APEX_ClothingSHIPPING_x86.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\binkw32.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\BioShockInfinite.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\nvtt.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\PhysX3_x86.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\steam_api.dll",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BioShock Infinite\\Binaries\\Win32\\SaveGames.Dat",
+        ],
+        "train": [
+            [0.0, 1.0],
+        ]
+    },
+    '7':{
         "context": [
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries",
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\binkw32.dll",
@@ -143,7 +278,157 @@ Train_Data = {
 
         ]
     },
-    '3':{
+    '8':{
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\binkw32.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\Borderlands.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\cudart.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\dbghelp.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\fmodex.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleFr.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleGr.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleIt.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleLa.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleSp.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleUk.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleUs.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\LangSelect.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\libresample.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\nvtt.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\NxCooking.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\ogg.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\PhysXCore.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\PhysXExtensions.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\SetupHelper.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\steam.log",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\SteamAPIUpdater.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\steam_api.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\UpdateDLLWrapper.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\vorbis.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\vorbisenc.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\vorbisfile.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_adv_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_aui_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_core_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_dbgrid_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_gl_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_html_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_media_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_net_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_odbc_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_qa_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_richtext_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_xml_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_xrc_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_adv_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_aui_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_core_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_dbgrid_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_gl_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_html_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_media_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_net_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_odbc_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_qa_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_richtext_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_xml_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_xrc_vc_custom.dll",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\bat.bat",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxRes",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\Windows",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\Borderlands.ico",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\PhysXLocal",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\player.plist",
+        ],
+        "train": [
+            [0.0, 1.0],
+            [1.0, 0.0],
+            [1.0, 0.0],
+            [1.0, 0.0],
+            [1.0, 0.0],
+            [0.0, 1.0],
+
+        ]
+    },
+    '9':{
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\binkw32.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\Borderlands.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\cudart.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\dbghelp.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\fmodex.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleFr.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleGr.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleIt.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleLa.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleSp.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleUk.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\FonixTtsDtSimpleUs.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\LangSelect.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\libresample.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\nvtt.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\NxCooking.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\ogg.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\PhysXCore.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\PhysXExtensions.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\SetupHelper.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\steam.log",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\SteamAPIUpdater.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\steam_api.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\UpdateDLLWrapper.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\vorbis.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\vorbisenc.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\vorbisfile.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_adv_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_aui_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_core_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_dbgrid_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_gl_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_html_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_media_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_net_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_odbc_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_qa_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_richtext_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_xml_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28ud_xrc_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_adv_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_aui_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_core_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_dbgrid_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_gl_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_html_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_media_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_net_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_odbc_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_qa_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_richtext_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_xml_vc_custom.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\wxmsw28u_xrc_vc_custom.dll",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\ffxivgame.bck",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\ffxivgame.ver",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\movie",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\borderlands\\Binaries\\sqpack",
+        ],
+        "train": [
+            [0.0, 1.0],
+            [0.0, 1.0],
+            [1.0, 1.0],
+            [1.0, 1.0],
+
+        ]
+    },
+    '10':{
         "context": [
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game",
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\bink2w32.dll",
@@ -164,6 +449,52 @@ Train_Data = {
             [1.0, 0.0],
             [1.0, 0.0],
             [1.0, 0.0],
+        ]
+    },
+	'11':{
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\bink2w32.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\bink2w64.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\ffxiv.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\ffxiv_dx11.exe",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\ffxivgame.bck",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\fileinfo.fiin",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\{f4n92df-dgsd}",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\sqpack",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\system32",
+        ],
+        "train": [
+            [1.0, 0.0],
+            [1.0, 0.0],
+            [0.0, 1.0],
+            [1.0, 0.0],
+            [0.0, 1.0],
+        ]
+    },
+	'12':{
+        "context": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\bink2w32.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\bink2w64.dll",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\ffxiv.exe",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\ffxiv_dx11.exe",
+        ],
+        "analysis": [
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\eventvwr.msc",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\appwiz.cpl",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\new_folder",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\personal_data.dat",
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FINAL FANTASY XIV - A Realm Reborn\\game\\hosts",
+        ],
+        "train": [
+            [0.0, 1.0],
+            [0.0, 1.0],
+            [0.0, 1.0],
+            [0.0, 1.0],
+            [0.0, 1.0],
         ]
     },
 }

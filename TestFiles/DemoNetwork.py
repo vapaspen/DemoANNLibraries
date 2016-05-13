@@ -205,7 +205,7 @@ class FileClassifier(object):
                     updates["Context_Layer_Out"],
                     self.Context_Layer_Out.get_gradients(
                         updates["Analysis_Layer_In"]["input"][:self.hyperparams["context_y"]],
-                        neurons=feed_foward_results["context"][i]["Context_Layer_Out"]
+                        neurons=feed_foward_results["context"][j]["Context_Layer_Out"]
                     )
                 )
 
@@ -213,7 +213,7 @@ class FileClassifier(object):
                     updates["Context_Layer_In"],
                     self.Context_Layer_In.get_gradients(
                         updates["Context_Layer_Out"]["input"],
-                        neurons=feed_foward_results["context"][i]["Context_Layer_In"]
+                        neurons=feed_foward_results["context"][j]["Context_Layer_In"]
                     )
                 )
 
@@ -222,7 +222,7 @@ class FileClassifier(object):
                 updates["Main_Feature_Layer_Out"],
                 self.Main_Feature_Layer_Out.get_gradients(
                     (updates["Context_Layer_In"]["input"]),
-                    neurons=feed_foward_results["context"][i]["Main_Feature_Layer_Out"]
+                    neurons=feed_foward_results["context"][j]["Main_Feature_Layer_Out"]
                     )
                 )
 
@@ -230,7 +230,7 @@ class FileClassifier(object):
                     updates["Main_Feature_Layer_In"],
                     self.Main_Feature_Layer_In.get_gradients(
                         updates["Main_Feature_Layer_Out"]["input"],
-                        neurons=feed_foward_results["context"][i]["Main_Feature_Layer_In"]
+                        neurons=feed_foward_results["context"][j]["Main_Feature_Layer_In"]
                     )
                 )
 
