@@ -1,6 +1,7 @@
 __author__ = 'vapaspen'
 __name__ = 'DemoNetwork'
 import numpy as np
+from scipy import stats
 from Layers.RNNLayer import ANN_Layer as ANN
 
 def bulk_assign(left_dict, right_dict):
@@ -69,7 +70,7 @@ class FileClassifier(object):
         data_as_string = np.array(input_as_string, 'c').view(np.uint8)
         padding = self.hyperparams["x_len"] - len(data_as_string)
         data_as_string = np.lib.pad(data_as_string, (0, padding), 'constant', constant_values=(0, 0))
-        data_as_string = data_as_string.astype(float) * 0.001
+        data_as_string = data_as_string.astype(float)
 
         return data_as_string
 
@@ -78,16 +79,18 @@ class FileClassifier(object):
         input_as_float = self.string_to_float(input_as_string)
 
         MFLI = self.Main_Feature_Layer_In.feed_foward(input_as_float)
+        MFLI = stats.threshold(MFLI, threshmin=np.median(MFLI), newval=0)
         MFLO = self.Main_Feature_Layer_Out.feed_foward(MFLI)
+        MFLO = stats.threshold(MFLO, threshmin=np.median(MFLO), newval=0)
 
         CLI = self.Context_Layer_In.feed_foward(MFLO)
         CLO = self.Context_Layer_Out.feed_foward(CLI)
 
         feed_foward_result_state = {
-            "Main_Feature_Layer_In": self.Main_Feature_Layer_In.Layer["nodes"]["neurons"],
-            "Main_Feature_Layer_Out": self.Main_Feature_Layer_Out.Layer["nodes"]["neurons"],
-            "Context_Layer_In": self.Context_Layer_In.Layer["nodes"]["neurons"],
-            "Context_Layer_Out": self.Context_Layer_Out.Layer["nodes"]["neurons"]
+            "Main_Feature_Layer_In": MFLI,
+            "Main_Feature_Layer_Out": MFLO,
+            "Context_Layer_In": CLI,
+            "Context_Layer_Out": CLO
         }
         return [CLO, feed_foward_result_state]
 
@@ -96,7 +99,9 @@ class FileClassifier(object):
         input_as_float = self.string_to_float(input_as_string)
 
         MFLI = self.Main_Feature_Layer_In.feed_foward(input_as_float)
+        MFLI = stats.threshold(MFLI, threshmin=np.median(MFLI), newval=0)
         MFLO = self.Main_Feature_Layer_Out.feed_foward(MFLI)
+        MFLO = stats.threshold(MFLO, threshmin=np.median(MFLO), newval=0)
 
         self.analysis_data = np.concatenate((context_layer_results, MFLO), axis=0)
 
@@ -105,12 +110,12 @@ class FileClassifier(object):
         ALO = self.Analysis_Layer_Out.feed_foward(ALH)
 
         feed_foward_result_state = {
-            "Main_Feature_Layer_In": self.Main_Feature_Layer_In.Layer["nodes"]["neurons"],
-            "Main_Feature_Layer_Out": self.Main_Feature_Layer_Out.Layer["nodes"]["neurons"],
+            "Main_Feature_Layer_In": MFLI,
+            "Main_Feature_Layer_Out": MFLO,
             "analysis_data": self.analysis_data,
-            "Analysis_Layer_In": self.Analysis_Layer_In.Layer["nodes"]["neurons"],
-            "Analysis_Layer_Hidden": self.Analysis_Layer_Hidden.Layer["nodes"]["neurons"],
-            "Analysis_Layer_Out": self.Analysis_Layer_Out.Layer["nodes"]["neurons"]
+            "Analysis_Layer_In": ALI,
+            "Analysis_Layer_Hidden": ALH,
+            "Analysis_Layer_Out": ALO
     }
 
         return [ALO, feed_foward_result_state]
@@ -199,7 +204,8 @@ class FileClassifier(object):
                 )
             )
 
-            for j in range(len(feed_foward_results["context"])):
+
+            for j in range(max(0, min(25, len(feed_foward_results["context"])))):
 
                 updates["Context_Layer_Out"] = bulk_assign(
                     updates["Context_Layer_Out"],
@@ -250,7 +256,7 @@ class FileClassifier(object):
 
         sample = self.feed_foward(data)
 
-        error = sample["result"] - targets
+        error = -(targets - sample["result"])
 
         self.loss = error
 

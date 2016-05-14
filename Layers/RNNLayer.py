@@ -2,6 +2,10 @@ __author__ = 'vapaspen'
 __name__ = 'RNNLayer'
 
 import numpy as np
+import math
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
 
 class ANN_Layer(object):
     """
@@ -9,7 +13,7 @@ class ANN_Layer(object):
     """
 
     def __init__(self, X_count, H_count, is_recurrent=True, MU=0.01, learning_rate=0.01):
-        rng = np.random.RandomState(1234)
+        rng = np.random.RandomState(298734)
 
         self.Layer = {}
 
@@ -78,9 +82,19 @@ class ANN_Layer(object):
         self.Layer["Last_input"] = input_nodes
         if self.Layer["is_recurrent"]:
             self.Layer["nodes"]["last_neurons"] = self.Layer["nodes"]["neurons"]
-            self.Layer["nodes"]["neurons"] = np.tanh(np.dot(input_nodes, self.Layer["nodes"]["input_weights"]) + np.dot(self.Layer["nodes"]["neurons"], self.Layer["nodes"]["hidden_weights"]) + self.Layer["nodes"]["bias"])
+            #self.Layer["nodes"]["neurons"] = np.tanh(np.dot(input_nodes, self.Layer["nodes"]["input_weights"]) + np.dot(self.Layer["nodes"]["neurons"], self.Layer["nodes"]["hidden_weights"]) + self.Layer["nodes"]["bias"])
+            self.Layer["nodes"]["neurons"] = sigmoid(
+                np.dot(input_nodes, self.Layer["nodes"]["input_weights"]) +
+                np.dot(self.Layer["nodes"]["neurons"], self.Layer["nodes"]["hidden_weights"]) +
+                self.Layer["nodes"]["bias"]
+            )
+
         else:
-            self.Layer["nodes"]["neurons"] = np.tanh(np.dot(input_nodes, self.Layer["nodes"]["input_weights"]) + self.Layer["nodes"]["bias"])
+            #self.Layer["nodes"]["neurons"] = np.tanh(np.dot(input_nodes, self.Layer["nodes"]["input_weights"]) + self.Layer["nodes"]["bias"])
+            self.Layer["nodes"]["neurons"] = sigmoid(
+                np.dot(input_nodes, self.Layer["nodes"]["input_weights"]) +
+                self.Layer["nodes"]["bias"]
+            )
         return self.Layer["nodes"]["neurons"]
 
     def reset_bias(self):
@@ -112,7 +126,8 @@ class ANN_Layer(object):
         gradients = {}
 
         self.Layer["nodes"]["neurons_delta"] = test_error
-        self.Layer["nodes"]["bias_delta"] += (1 - self.Layer["nodes"]["neurons"] * self.Layer["nodes"]["neurons"]) * test_error
+        #self.Layer["nodes"]["bias_delta"] += (1 - self.Layer["nodes"]["neurons"] * self.Layer["nodes"]["neurons"]) * test_error
+        self.Layer["nodes"]["bias_delta"] +=  self.Layer["nodes"]["neurons"] * (1 - self.Layer["nodes"]["neurons"]) * test_error
         self.Layer["nodes"]["input_weights_delta"] += self.Layer["nodes"]["bias_delta"] * np.array([self.Layer["Last_input"]]).T
 
         gradients["bias_delta"] = self.Layer["nodes"]["bias_delta"]

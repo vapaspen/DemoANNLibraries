@@ -6,19 +6,19 @@ import numpy as np
 from DemoNetwork import FileClassifier
 import SampleData as data
 
-parm = {"x_len": 180,
-        "feature_h": 40,
-        "feature_y": 20,
-        "context_h": 40,
-        "context_y": 20,
-        "analysis_h1": 15,
-        "analysis_h2": 7,
+parm = {"x_len": 100,
+        "feature_h": 100,
+        "feature_y": 100,
+        "context_h": 2,
+        "context_y": 2,
+        "analysis_h1": 200,
+        "analysis_h2": 25,
         "class_count": 2,
         "confidence_threshold": 0.1,
-        "learning_rate":0.001,
-        "MU":0.0001
+        "learning_rate":0.1,
+        "MU":0.001
        }
-MAX_ITER = 100000
+MAX_ITER = 100
 
 FC = FileClassifier(parm)
 sum_mean_loss = 0
@@ -34,7 +34,7 @@ for i in range(MAX_ITER):
         epoch_loss += np.mean(np.abs(FC.loss))
 
     sum_mean_loss = epoch_loss/len(sample_path)
-    if i % 100 == 0:
+    if i % 10 == 0:
         print(str(i) + ": Loss: " + str(sum_mean_loss) +" Current Raw: " + str(train_result["result"]))
 
 for item in data.Test_Data:
